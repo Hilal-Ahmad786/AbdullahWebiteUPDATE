@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | CSYGA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+      
+          <!-- Left: Logo -->
+          <div class="header-left">
+            <a href="index.html" class="logo">
+              <img src="logo.png" alt="" width="120px" height="60px">
+            </a>
+          </div>
+      
+          <!-- Center: Navigation Menu -->
+          <div class="header-center">
+            <ul class="nav-menu">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="dropdown">
+                <a href="engagements.html">Our Engagements <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="engagements.html#dynamic"><i class="fas fa-bullhorn"></i> Dynamic Engagements</a>
+                  <a href="engagements.html#simulations"><i class="fas fa-handshake"></i> Diplomacy Simulations</a>
+                  <a href="engagements.html#workshops"><i class="fas fa-users"></i> Workshops</a>
+                  <a href="engagements.html#cultural"><i class="fas fa-globe-americas"></i> Cultural Diplomacy</a>
+                </div>
+              </li>
+              <li><a href="partners.html">Partners</a></li>
+              <li><a href="get-involved.html">Get Involved</a></li>
+              <li><a href="engage.html">Engage</a></li>
+            </ul>
+          </div>
+      
+          <!-- Right: Apply Now Button -->
+          <div class="header-right">
+            <a href="get-involved.html#apply" class="btn btn-primary">Apply Now</a>
+          </div>
+      
+        </div>
+      </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Join Our Global Movement</h1>
+            <p>Discover opportunities to contribute your talents, develop new skills, and make an impact on the world stage.</p>
+        </div>
+    </section>
+
+    <!-- Opportunities Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Opportunities for Engagement</h2>
+                <p>Whether you're a student, young professional, or established expert, there are multiple ways to get involved</p>
+            </div>
+            
+            <div class="engagement-grid">
+                <div class="engagement-card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Youth Delegate Program</h3>
+                        <p>Join our flagship program for young leaders aged 18-30. Participate in international conferences, diplomatic simulations, and policy development processes.</p>
+                        <ul>
+                            <li>Mentorship from senior diplomats</li>
+                            <li>Access to global networks</li>
+                            <li>Leadership development training</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-secondary">Apply Now</a>
+                    </div>
+                </div>
+                
+                <div class="engagement-card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Volunteer Opportunities</h3>
+                        <p>Contribute your skills to support our programs and operations. Volunteers play crucial roles in event organization, communications, research, and more.</p>
+                        <ul>
+                            <li>Flexible time commitments</li>
+                            <li>Skill-based placements</li>
+                            <li>Remote and in-person options</li>
+                            <li>Professional development</li>
+                        </ul>
+                        <a href="#volunteer" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="engagement-card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Mentorship Program</h3>
+                        <p>Share your expertise with the next generation of diplomatic leaders. Our mentors guide youth participants through their professional development journey.</p>
+                        <ul>
+                            <li>Quarterly mentorship cycles</li>
+                            <li>Structured guidance framework</li>
+                            <li>Networking with fellow experts</li>
+                            <li>Impact measurement</li>
+                        </ul>
+                        <a href="#mentor" class="btn btn-secondary">Become a Mentor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Section -->
+    <section class="content-section" style="background-color: var(--light-bg);" id="apply">
+        <div class="container">
+            <div class="section-header">
+                <h2>Apply Now</h2>
+                <p>Begin your journey as a youth diplomat and global changemaker</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="applicationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group form-group-inline">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-wrapper">
+                            <input type="text" id="countryCode" placeholder="+90" maxlength="5" required>
+                            <input type="tel" id="phone" placeholder="5XX XXX XXXX" required>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label for="country">Country of Residence</label>
+                        <input type="text" id="country" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" min="16" max="35" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="program">Program of Interest</label>
+                        <select id="program" required>
+                            <option value="">Select a program</option>
+                            <option value="delegate">Youth Delegate Program</option>
+                            <option value="volunteer">Volunteer Program</option>
+                            <option value="mentor">Mentorship Program</option>
+                            <option value="workshop">Specialized Workshop</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Relevant Experience</label>
+                        <textarea id="experience" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motivation">Motivation Statement</label>
+                        <textarea id="motivation" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Stay updated with our latest programs, events, and opportunities for youth engagement in global affairs.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" >
+                    <img src="logo.png" alt="" width="240px" height="120px" style="background: white; padding: 10px; margin-bottom: 10px;">
+                  </a>         
+                  <h3>Cultivating Strategic Youth for Global Action</h3>           <p>Empowering youth to become leaders in global diplomacy and international affairs through innovative programs and strategic partnerships.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thecsyga/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/thecsyga"><i class="fab fa-x"></i></a>
+                    <a href="https://www.linkedin.com/company/center-for-strategic-youth-global-affairs/about/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/thecsyga"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="engagements.html">Our Engagements</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Engage With Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Thecsyga@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+90 501 599 05 66</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Mehmet Akif Mah 1. Muammer Aksoy Cad Bina 36 Daire 5 
+                            Kucukcekmece, Istanbul</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CSYGA - Center for Strategic Youth Global Affairs. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
