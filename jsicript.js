@@ -1,20 +1,35 @@
 // script.js - Shared JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Menu Toggle
+    // Mobile Menu Toggle    
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
     if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const icon = mobileToggle.querySelector('i');
-            if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
-            }
-        });
-    }
+      mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
     
+        const icon = mobileToggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-times');
+        }
+      });
+    }
+
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+        link.addEventListener('click', function (e) {
+          // Only apply on mobile
+          if (window.innerWidth <= 768) {
+            e.preventDefault(); // prevent navigation
+      
+            const parentLi = this.parentElement;
+            parentLi.classList.toggle('open');
+          }
+        });
+      });
+
+
+
     // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
