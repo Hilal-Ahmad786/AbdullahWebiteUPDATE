@@ -204,13 +204,19 @@ header {
 
 
 
+
 /* Desktop default */
 .mobile-toggle {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
   }
-  
+
+  /* By default, hide the mobile version */
+.mobile-apply {
+    display: none;
+    margin-top: 1rem;
+  }
   /* Mobile responsiveness */
   @media (max-width: 768px) {
     .mobile-toggle {
@@ -269,6 +275,15 @@ header {
         
           .dropdown.open .dropdown-content {
             display: block;
+          }
+
+          .mobile-apply {
+            display: block;
+          }
+        
+          /* Hide the header-right version */
+          .header-right {
+            display: none!important;
           }
 
   }
